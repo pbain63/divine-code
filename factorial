@@ -1,4 +1,4 @@
-## Factorial Problem and simple solution:
+## Factorial Problem and simple solution for practice:
 
 x = int(input("Enter the number: "))
 

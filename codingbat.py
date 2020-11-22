@@ -1,4 +1,4 @@
-##Codingbat python 
+##Codingbat python problem and solutions
 #https://codingbat.com/python
 
 List-2 > sum13
@@ -68,3 +68,6 @@ def sum13(nums):
     nums.pop(nums.index(13))
     
   return sum(nums)
+  
+  
+  

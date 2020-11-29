@@ -64,3 +64,44 @@ def example():
 
 # The function is called
 example()
+
+
+### we will compare the different approaches and calculate their run times
+
+
+import time
+
+n= 100000
+
+start_time = time.time()
+l = []
+for i in range(n):
+    l = l + [i * 2]
+print(time.time() - start_time)
+#43.94827699661255
+
+##
+
+import time
+
+n= 100000
+
+start_time = time.time()
+l = []
+for i in range(n):
+    l += [i * 2]
+print(time.time() - start_time)
+#0.08699321746826172
+
+##
+
+import time
+
+n= 100000
+
+start_time = time.time()
+l = []
+for i in range(n):
+    l.append(i * 2)
+print(time.time() - start_time)
+#0.06999611854553223

@@ -42,6 +42,8 @@ for num in numbers:
     # Print `nth`
     print(nth)
 
+
+
 ### Fibonacci series by while loop
 
 # Set `fib_no` to 55, the number until where you want to print

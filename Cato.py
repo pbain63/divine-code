@@ -13,4 +13,31 @@ for i in range(n):
 for i in range(n,0,-1):
     for j in range(i):
         print('* ', end="")
-    print('')
+    print('')    
+
+
+
+### Fibonacci series by for loop
+
+# Initialize `first_no` to `0`
+first_no = 0
+
+# Initialize `second_no` to `1`
+second_no = 1
+
+# Initialize `numbers`
+numbers = range(0, 11)
+
+# Find and display Fibonacci series
+for num in numbers:
+    if (num <= 1):
+        # Update only `nth`
+        nth = num
+    else:
+        # Update the values `nth`, `first_no` and `second_no`
+        nth = first_no + second_no
+        first_no = second_no
+        second_no = nth
+
+    # Print `nth`
+    print(nth)

@@ -73,6 +73,7 @@ while first_no <= fib_no:
     # Set counter `count` +1
     count += 1
 
+
 ### Recursion 
 
 def tri_recursion(k):
@@ -85,3 +86,34 @@ def tri_recursion(k):
 
 print("\n\nRecursion Example Results")
 tri_recursion(6)
+
+
+### A simple guess game by while 
+
+import random
+upper_bound = 20
+lower_bound = 1
+adaptive_upper_bound = upper_bound
+adaptive_lower_bound = lower_bound
+to_be_guessed = random.randint(lower_bound, upper_bound)
+guess = 0
+while guess != to_be_guessed:
+    guess = int(input("Guess new number: "))
+    if guess <= 0:
+        print("Sorry, you're giving up.")
+        break
+    if guess < lower_bound or guess > upper_bound:
+        print("Guess not within boundaries!")
+    elif guess < adaptive_lower_bound or guess > adaptive_upper_bound:
+        print("Your guess is contradictory to your previous guess!")
+    elif guess > to_be_guessed:
+        adaptive_upper_bound = guess - 1
+        print("Number is too high!")
+    elif guess < to_be_guessed:
+        adaptive_lower_bound = guess + 1
+        print("Number is too small!")
+
+else:
+    print("Congratulations! You made it!")
+
+##

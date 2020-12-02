@@ -1,4 +1,4 @@
-### nested pattern
+### Program: nested_pattern.py
 
 # Initialize the first five rows
 n = 5
@@ -17,7 +17,7 @@ for i in range(n,0,-1):
 
 
 
-### Fibonacci series by for loop
+###Program: Fibonacci series by for loop
 
 # Initialize `first_no` to `0`
 first_no = 0
@@ -44,7 +44,7 @@ for num in numbers:
 
 
 
-### Fibonacci series by while loop
+###Program: Fibonacci series by while loop
 
 # Set `fib_no` to 55, the number until where you want to print
 fib_no = 55
@@ -74,7 +74,7 @@ while first_no <= fib_no:
     count += 1
 
 
-### Recursion 
+###Program: Recursion 
 
 def tri_recursion(k):
   if(k > 0):
@@ -88,7 +88,7 @@ print("\n\nRecursion Example Results")
 tri_recursion(6)
 
 
-### A simple guess game by while 
+###Program: A simple guess game by while 
 
 import random
 upper_bound = 20
@@ -117,7 +117,7 @@ else:
     print("Congratulations! You made it!")
 
 ###
-### # Declare global variable name for use in all functions
+### #Program: Declare global variable name for use in all functions
 name = str(input('Enter your name: '))
 
 
@@ -147,7 +147,9 @@ if __name__ == '__main__':
 
 ##
 
-### Fibonacci boundaries
+###Program: Fibonacci boundaries: the largest fibonacci
+    #number smaller than x and the lowest
+    #fibonacci number higher than x
 
 def fib_intervall(x):
     """ returns the largest fibonacci
@@ -173,8 +175,9 @@ while True:
     print("Largest Fibonacci Number smaller than x: " + str(lub))
     print("Smallest Fibonacci Number larger than x: " + str(sup))
 
+
 ##
-### Function recursion
+###Program: Function recursion
 
 def tri_recursion(k):
   if(k > 0):

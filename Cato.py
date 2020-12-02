@@ -116,4 +116,75 @@ while guess != to_be_guessed:
 else:
     print("Congratulations! You made it!")
 
+###
+### # Declare global variable name for use in all functions
+name = str(input('Enter your name: '))
+
+
+# Define function to check if name contains a vowel
+def has_vowel():
+    if set('aeiou').intersection(name.lower()):
+        print('Your name contains a vowel.')
+    else:
+        print('Your name does not contain a vowel.')
+
+
+# Iterate over letters in name string
+def print_letters():
+    for letter in name:
+        print(letter)
+
+
+# Define main method that calls other functions
+def main():
+    has_vowel()
+    print_letters()
+
+
+# Execute main() function
+if __name__ == '__main__':
+    main()
+
+##
+
+### Fibonacci boundaries
+
+def fib_intervall(x):
+    """ returns the largest fibonacci
+    number smaller than x and the lowest
+    fibonacci number higher than x"""
+    if x < 0:
+        return -1
+    (old, new) = (0, 1)
+    while True:
+        if new < x:
+            (old, new) = (new, old + new)
+        else:
+            if new == x:
+                new = old + new
+            return (old, new)
+
+
+while True:
+    x = int(input("Your number: "))
+    if x <= 0:
+        break
+    (lub, sup) = fib_intervall(x)
+    print("Largest Fibonacci Number smaller than x: " + str(lub))
+    print("Smallest Fibonacci Number larger than x: " + str(sup))
+
+##
+### Function recursion
+
+def tri_recursion(k):
+  if(k > 0):
+    result = k + tri_recursion(k - 1)
+    print(result)
+  else:
+    result = 0
+  return result
+
+print("\n\nRecursion Example Results")
+tri_recursion(6)
+
 ##

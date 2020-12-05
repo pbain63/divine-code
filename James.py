@@ -42,3 +42,18 @@ else:
   quit()
 print("The temperature in", o_convention, "is", result, "degrees.")
 
+###
+###Prime number or not
+n = int(input("Enter the number: "))
+if n >1:
+    for i in range(2, n):
+        if n % i == 0:
+            print("Not Prime.")
+            print(i, "times", n//i, "is", n)
+            break
+    else:
+        print("Prime.")
+else:
+    print("Not Prime.")
+
+###

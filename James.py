@@ -17,6 +17,7 @@ print(z)
 
 
 ###
+
 def far(c):
     f = ((c * 9) / 5 + 32)
     print(f)
@@ -65,7 +66,7 @@ mylist = ["a", "b", "a", "c", "c"]
 mylist = list(dict.fromkeys(mylist))
 print(mylist)
 
-###
+### in function
 
 def my_function(x):
   return list(dict.fromkeys(x))

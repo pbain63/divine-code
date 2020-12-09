@@ -44,6 +44,7 @@ print("The temperature in", o_convention, "is", result, "degrees.")
 
 ###
 ###Prime number or not
+
 n = int(input("Enter the number: "))
 if n >1:
     for i in range(2, n):
@@ -65,6 +66,7 @@ mylist = list(dict.fromkeys(mylist))
 print(mylist)
 
 ###
+
 def my_function(x):
   return list(dict.fromkeys(x))
 
